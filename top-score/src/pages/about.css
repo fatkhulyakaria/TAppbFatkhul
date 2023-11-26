@@ -1,0 +1,49 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  border-radius: 16px; /* Slightly increased border-radius */
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  margin: 20vh auto;
+  margin-top: 200px;
+  background: linear-gradient(
+    to bottom,
+    #4a90e2,
+    #6a5acd
+  ); /* Gradient background */
+  color: #fff; /* Text color */
+}
+
+.profile-card:hover {
+  transform: scale(1.1); /* Slightly increased scale on hover */
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.description {
+  text-align: center;
+  font-family: "Arial", sans-serif; /* Choose a readable font */
+}
+
+#nama {
+  font-weight: bold;
+  margin: 15px 0; /* Increased margin for the name */
+  font-size: 20px; /* Slightly increased font size for the name */
+}
+
+#nim,
+#kelompok {
+  margin-bottom: 8px; /* Adjusted margin for consistency */
+  font-size: 16px; /* Increased font size for other details */
+}

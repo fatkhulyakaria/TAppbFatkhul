@@ -1,0 +1,68 @@
+/* topscore.css */
+
+.armor-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-sort-container {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.sort-button {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sort-button.active {
+  font-weight: bold;
+}
+
+.armor-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust minmax values as needed */
+  gap: 20px;
+}
+
+.armor-list-item {
+  background: linear-gradient(to bottom, #4a90e2, #6a5acd);
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+armor-list-item.clicked {
+  transform: scale(1.1);
+}
+.armor-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.armor-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.armor-defense,
+.armor-resistances {
+  margin-bottom: 5px;
+}
+
+/* Add more styling as needed */
